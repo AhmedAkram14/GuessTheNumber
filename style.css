@@ -1,0 +1,212 @@
+body {
+    background: linear-gradient(to bottom, #f16fa3, rgb(192, 76, 91), rgb(228, 53, 76));
+}
+
+.container{
+    background: linear-gradient(to bottom, #f16fa3, rgb(192, 76, 91), rgb(228, 53, 76));
+    border-radius: 15px;
+    width: 350px;
+    margin: 0 auto;
+    padding: 10px;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+
+h1 {
+    text-align: center;
+    color: #f16fa3;
+    background-color: black;
+    padding: 10px 21px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.output {
+    /* background-color: aliceblue; */
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    width: 80%;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.nums {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.nums p {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 10px;
+    background-color: black;
+    color: #f16fa3;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.res {
+    background: #ffc8c8;
+    border-radius: 14px;
+    width: 69px;
+    padding: 6px 0px 6px 43px;
+    font-size: 25px;
+    margin: 13px 60px 9px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.res-cont {
+    height: 100%;
+    display: flex;
+}
+
+.icons {
+    /* margin-left: 50px; */
+    align-self: center;
+    margin-top: 10px;
+    height: 100%;
+}
+
+.icons span {
+    width: 35px;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: 18px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: #f16fa3;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.5);
+}
+
+i {
+    align-self: center;
+    font-size: 23px;
+    padding: 5px;
+}
+
+.res-cont h2{
+    font-size: 45px;
+}
+
+.res-cont h3{
+    font-size: 21px;
+}
+.res-cont h3 span{
+    font-size: 31px;
+    color: #ffc8c8;
+    /* #fff3be */
+}
+
+
+.celebrate {
+    animation: celebrateAnimation 2s ease-in-out infinite;
+}
+
+@keyframes celebrateAnimation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* Add these styles at the end of your existing CSS */
+
+@media only screen and (max-width: 600px) {
+    body {
+        background: linear-gradient(to bottom, #f16fa3, rgb(192, 76, 91), rgb(228, 53, 76));
+        height: fit-content;
+    }
+    .celebrate{
+        margin-top: 165px !important;
+    }
+
+    .res-cont {
+        height: 50%;
+    }
+
+    .output {
+        width: 100%;
+    }
+
+    .res-cont h2 {
+        font-size: 40px;
+    }
+
+    .nums {
+        transform: translateY(-30px);
+    }
+
+    .res-cont h3 {
+        font-size: 18px;
+    }
+
+    .res-cont h3 span {
+        font-size: 26px;
+    }
+    .container {
+        height: 85vh;
+        padding-bottom: 10px;
+        margin: 30px auto; 
+    }
+
+}
+
+/* Additional Styles for Landscape Tablets */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    body {
+        background: linear-gradient(to bottom, #f16fa3, rgb(192, 76, 91), rgb(228, 53, 76));
+    }
+    .res-cont {
+        height: 50%;
+    }
+    .celebrate{
+        margin-top: 165px !important;
+    }
+    .nums {
+        transform: translateY(-40px);
+    }
+
+    .container {
+        height: 95vh;
+        /* padding-bottom: 10px; */
+        margin: 40px auto;
+    }
+
+    .res-cont h2 {
+        font-size: 40px;
+    }
+
+    .res-cont h3 {
+        font-size: 30px;
+    }
+
+    .res-cont h3 span {
+        font-size: 28px;
+    }
+}
